@@ -1,7 +1,9 @@
 kataKunci = "Aku Sayang Kamu"
-jawabanUser = input("Masukan Kata Kunci : ")
+jawabanUser = ""
+bantuan = False
 
-if jawabanUser != kataKunci:
-    print("salah")
+while jawabanUser != kataKunci and (bantuan is False):
+    jawabanUser = input("Masukan Kata Kunci : ")
 else:
+    bantuan = True
     print("Tulus dari lubuk hatiku")
